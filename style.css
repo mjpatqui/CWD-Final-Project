@@ -1,4 +1,4 @@
-.sticky {
+div.sticky {
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -112,4 +112,7 @@ div.carousel-item > h2,p {
 }
 .bg-img {
   background: url(images/Events_bg.jpg);
+}
+.email-img {
+  background: url(images/email-cover.jpg);
 }
