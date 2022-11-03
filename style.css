@@ -32,11 +32,11 @@ div.carousel-item > h2,p {
   
   ::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background: #ff8a80;  
+  background: #7e7e7e;  
   }
   
   ::-webkit-scrollbar-thumb:hover {
-  background: #999;  
+  background:#ff8a80;  
 
   }
 
@@ -110,9 +110,48 @@ div.carousel-item > h2,p {
   filter: brightness(30%);
   max-width: auto;
 }
-.bg-img {
-  background: url(images/Events_bg.jpg);
-}
+
 .email-img {
   background: url(images/email-cover.jpg);
+}
+
+/*Preloader*/
+.preloader_bg {
+  position: fixed;
+  z-index: 999999;
+  background-color: #212121;
+  width: 100vw;
+  height: 100vh;
+}
+.preloader-wrapper {
+  position: absolute;
+  margin-left: 48%;
+  margin-top: 50vh;
+}
+.preloader-wrapper:before, .preloader-wrapper:after {
+  content: '';
+  border: 1em solid #ff8a80;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+.preloader-wrapper:before {
+  animation-delay: .5s;
+}
+@keyframes preloader-wrapper{
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
