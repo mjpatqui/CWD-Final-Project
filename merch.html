@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Compiled and minified CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="grt-youtube-popup.css">
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+    <!-- Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+    <title>Store - Morissette</title>
+    <link rel="icon" href="images/titlebar.png" type="image/icon type">
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper z-depth-3" style="height:100px; background: url(images/merch_backpng.png);"> 
+            <div class="wrapper" style="padding-top: 20px;">
+                <a href="index.html" class="brand-logo grey-text text-darken-4 center" style="margin-top: -30px;"><img width="320px" src="images/merch_logo.png" alt=""></a>
+                <a href="#" ><i data-target="slide-out" class="large material-icons red-text text-accent-1 sidenav-trigger left">local_mall</i></a>
+        </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!--SideNav-->
+    <ul id="slide-out" class="sidenav red accent-1" style="background: url(images/merch_backpng.png); width: 40vw;">
+      <div class="container center">
+            <div class="cart">
+                <h2 class="red-text text-accent-1" style="font-weight: bold;">Cart items</h2>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <a value="1" class="atc red accent-1 grey-text text-darken-4 btn waves-effect waves-dark" style="font-weight: bold;">CLEAR</a>
+                    </div>
+                    <div class="col s12 m6">
+                        <a value="1" class="atc red accent-1 grey-text text-darken-4 btn waves-effect waves-dark" style="font-weight: bold;">Checkout</a>
+                    </div>
+                </div>
+                <div id="cartItems" class="red-text text-accent-1">Loading cart...</div>
+                <span class="red-text text-accent-1"> Total price: </span><strong class="red-text text-accent-1" id="totalPrice">0 $</strong>
+            </div>
+      </div>
+    </ul>
+
+
+
+    <div class="home" style="margin-bottom: -5px;">
+        <a href="https://music.apple.com/ph/album/signature-ep/1578631670"><video muted autoplay loop style="width: 100%;" class="hide-on-med-and-down"> <source src="videos/firstvid.mp4" type="video/mp4"></video></a>
+        <a href="https://music.apple.com/ph/album/signature-ep/1578631670"><video muted autoplay loop style="width: 100%;" class="hide-on-large-only"> <source src="videos/secvid.mp4" type="video/mp4"></video></a>
+      </div>
+
+    <!--main store-->
+
+    <div style="background: url(images/merch_backpng.png); margin-top: -10px;">
+
+            <br><br><br>
+        <div class="products row center" style="margin-left: 40px; margin-right:40px;">
+            <div class="product col s12 m6 l3" data-name="vinyl1" data-price="12" data-id="0">
+                <img class="responsive-img" src="images/charoite edition.png" alt="vinyl1" /><br><br>
+                <span class="red-text text-accent-1 priceshow" style="font-weight:bolder; font-family:sans-serif; font-size: 17px;">Signature: Charoite Edition Vinyl <br><br> $19.99</span>
+                <div class="container">
+                    <br>
+                    <a class="atc red accent-1 grey-text text-darken-4 btn waves-effect waves-dark button" style="font-weight: bold;">Add to cart</a>
+                    </div>
+            </div>
+            <div class="col s12 m6 l3" data-name="vinyl2" data-price="10" data-id="1">
+                <img class="responsive-img" src="images/jade edition.png" alt="vinyl2" /><br><br>
+                <span class="red-text text-accent-1" style="font-weight:bolder; font-family:sans-serif; font-size: 17px;">Signature: Jade Edition Vinyl<br><br> $19.99</span>
+                <div class="container">
+                    <br>
+                    <a value="1" class="atc red accent-1 grey-text text-darken-4 btn waves-effect waves-dark" style="font-weight: bold;">Add to cart</a>
+                    </div>
+            </div>
+            <div class="col s12 m6 l3" data-name="vinyl3" data-price="20" data-id="2">
+                <img class="responsive-img" src="images/gold edition.png"alt="vinyl3" /><br><br>
+                <span class="red-text text-accent-1" style="font-weight:bolder; font-family:sans-serif; font-size: 17px;">Signature: Gold Edition Vinyl<br><br> $19.99</span>
+                <div class="container">
+                    <br>
+                    <a value="1" class="atc red accent-1 grey-text text-darken-4 btn waves-effect waves-dark" style="font-weight: bold;">Add to cart</a>
+                    </div>
+            </div>
+            <div class="col s12 m6 l3" data-name="vinyl4" data-price="20" data-id="2">
+                <img class="responsive-img" src="images/morganite edition.png"alt="vinyl4" /><br><br>
+                <span class="red-text text-accent-1" style="font-weight:bolder; font-family:sans-serif; font-size: 17px;">Signature: Morganite Edition Vinyl<br><br> $19.99</span>
+                <div class="container">
+                    <br>
+                    <a value="1" class="atc red accent-1 grey-text text-darken-4 btn waves-effect waves-dark" style="font-weight: bold;">Add to cart</a>
+                    </div>
+            </div>
+            </div>
+            <br><br>
+        <div class="row center" style="margin-left: 50px; margin-right:50px;">
+            <div class="col s12 m6 l3" data-name="cd1" data-price="12" data-id="0">
+                <img class="responsive-img" src="images/charoite cir.jpg" alt="cd1" /><br><br>
+                <span class="red-text text-accent-1 priceshow" style="font-weight:bolder; font-family:sans-serif; font-size: 17px;">Signature: Charoite Edition Vinyl <br><br> $19.99</span>
+                <div class="container">
+                    <br>
+                    <a value="1" class="atc red accent-1 grey-text text-darken-4 btn waves-effect waves-dark" style="font-weight: bold;">Add to cart</a>
+                    </div>
+            </div>
+            <div class="col s12 m6 l3" data-name="cd2" data-price="10" data-id="1">
+                <img class="responsive-img" src="images/jade cir.jpg" alt="cd2" /><br><br>
+                <span class="red-text text-accent-1 priceshow" style="font-weight:bolder; font-family:sans-serif; font-size: 17px;">Signature: Charoite Edition Vinyl <br><br> $19.99</span>
+                <div class="container">
+                    <br>
+                    <a value="1" class="atc red accent-1 grey-text text-darken-4 btn waves-effect waves-dark" style="font-weight: bold;">Add to cart</a>
+                    </div>
+            </div>
+            <div class="col s12 m6 l3" data-name="cd3" data-price="20" data-id="2">
+                <img class="responsive-img" src="images/gold cir.jpg"alt="cd3" /><br><br>
+                <span class="red-text text-accent-1 priceshow" style="font-weight:bolder; font-family:sans-serif; font-size: 17px;">Signature: Charoite Edition Vinyl <br><br> $19.99</span>
+                <div class="container">
+                    <br>
+                    <a value="1" class="atc red accent-1 grey-text text-darken-4 btn waves-effect waves-dark" style="font-weight: bold;">Add to cart</a>
+                    </div>
+            </div>
+            <div class="col s12 m6 l3" data-name="cd4" data-price="20" data-id="2">
+                <img class="responsive-img" src="images/morganite cir.jpg"alt="cd4" /> <br><br>
+                <span class="red-text text-accent-1 priceshow" style="font-weight:bolder; font-family:sans-serif; font-size: 17px;">Signature: Charoite Edition Vinyl <br><br> $19.99</span>
+                <div class="container">
+                    <br>
+                    <a value="1" class="atc red accent-1 grey-text text-darken-4 btn waves-effect waves-dark" style="font-weight: bold;">Add to cart</a>
+                    </div>
+            </div>
+        </div>
+        <br><br>
+        
+   
+
+
+        
+    <!--Footer-->
+    <footer class="center z-depth-3" style="background: url(images/merch_backpng.png); padding: 20px;">
+      <div class="icons-wrapper" style="margin-top: 20px;"> 
+      <a href="https://www.facebook.com/MorissettePh/" target="_blank"><i class="fab fa-facebook fa-2x red-text text-accent-1" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/itsMorissette" target="_blank"><i class="fab fa-twitter fa-2x red-text text-accent-1" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/itsmorissette/" target="_blank"><i class="fab fa-instagram fa-2x red-text text-accent-1" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCthcmfysauZUtj0sMlldgAQ" target="_blank"><i class="fab fa-youtube fa-2x red-text text-accent-1" aria-hidden="true"></i></a>
+      <a href="https://open.spotify.com/artist/62WbvkXqQGvXQvw74GU3kQ" target="_blank"><i class="fab fa-spotify fa-2x red-text text-accent-1" aria-hidden="true"></i></a>
+      <a href="https://music.apple.com/us/artist/morissette/342785077" target="_blank"><i class="fab fa-itunes fa-2x red-text text-accent-1" aria-hidden="true"></i></a>
+      </div>
+      <div style="margin-top: 20px;" class="copyright red-text text-accent-1"><a href="" class="red-text text-accent-1">@2022 Morissette, CCP &nbsp;&nbsp;</a><a class="red-text text-accent-1" href="">Terms</a><a href="" class="red-text text-accent-1">/ Privacy</a><a href="" class="red-text text-accent-1">/ Accessibility</a><a href="" class="red-text text-accent-1">/ Cookie Choices</a></div>
+    </footer>
+
+
+    
+
+    
+ 
+
+
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified Javascript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+       $(document).ready(function(){   
+      //Side Nav
+      $('.sidenav').sidenav();
+             })
+    </script>
+</body>
+</html>
