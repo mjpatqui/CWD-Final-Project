@@ -155,4 +155,6 @@ div.carousel-item > h2,p {
     transform: scale(1);
   }
 }
-
+.products .container {
+  margin-bottom: 30px;
+}
